@@ -5,8 +5,10 @@ const router = require("./routes/workouts");
 const app = express();
 const workoutRoutes = require("./routes/workouts");
 
+//middleware
+app.use(express.json());
+
 app.use((req, res, next) => {
-  //middleware
   console.log(req.path, req.method);
   next();
 });
