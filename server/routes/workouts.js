@@ -1,5 +1,9 @@
 const express = require("express");
-const { createWorkout } = require("../controller/workoutController");
+const {
+  createWorkout,
+  getWorkout,
+  getWorkouts,
+} = require("../controller/workoutController");
 const router = express.Router();
 
 //Get all workouts
