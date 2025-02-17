@@ -6,12 +6,10 @@ export function Home() {
     const fetchWorkouts = async () => {
       const response = await fetch("/api/workouts");
       const json = await response.json();
-      console.log(response);
-      //   console.log(json);
 
-      //   if (response.ok) {
-      //     setWorkouts(json);
-      //   }
+      if (response.ok) {
+        setWorkouts(json);
+      }
     };
     fetchWorkouts();
   }, []);
