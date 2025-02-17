@@ -5,7 +5,7 @@ export function Home() {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch("/api/workouts");
-      //   const json = await response.json();
+      const json = await response.json();
       console.log(response);
       //   console.log(json);
 
