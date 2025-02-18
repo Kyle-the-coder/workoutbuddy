@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import fire from "../assets/IgniteLogo1.svg";
 export function Home() {
   const [workouts, setWorkouts] = useState(null);
 
