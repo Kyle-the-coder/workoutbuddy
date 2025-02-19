@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import fire from "../assets/IgniteLogo1.svg";
+import logoB from "../assets/IgniteLogoBlack.svg";
+import logo3 from "../assets/IgniteLogo3dBlack.svg";
+import logoW from "../assets/IgniteLogoWhite.svg";
 export function Home() {
   const [workouts, setWorkouts] = useState(null);
 
@@ -16,6 +19,9 @@ export function Home() {
   }, []);
   return (
     <div className="home">
+      <img src={logoB} width="1400px" height="1400px" />
+      <img src={logoW} width="400px" height="400px" />
+      <img src={logo3} width="400px" height="400px" />
       <div className="workouts">
         {workouts &&
           workouts.map((workout) => {
